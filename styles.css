@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .bar {
+    width: 100px;
+    height: 5px;
+    background-color: #ff6347;
+    position: relative;
+    animation: moveLeftRight 1s infinite ease-in-out;
+    border-radius: 20%;
+  }
+  
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(300px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
